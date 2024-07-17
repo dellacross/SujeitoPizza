@@ -1,0 +1,30 @@
+{
+  "name": "contacerta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dellacross/ContaCerta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dellacross/ContaCerta/issues"
+  },
+  "homepage": "https://github.com/dellacross/ContaCerta#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "latest-version": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "nodemon": "^3.1.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3"
+  }
+}
