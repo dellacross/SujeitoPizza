@@ -3,7 +3,9 @@ import 'express-async-errors'
 import { router } from './routes'
 import cors from 'cors'
 
-const app = express ()
+require('dotenv').config();
+
+const app = express()
 
 app.use(express.json())
 app.use(cors()) // qualquer ip pode fzr as requisicoes
