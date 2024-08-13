@@ -10,6 +10,7 @@ import { isAuthenticated } from './middlewares/isAuthenticated'
 import { CreateProductController } from './controllers/product/CreateProductController'
 import { ListByCategoryController } from './controllers/product/ListByCategoryController'
 import { CreateOrderController } from './controllers/order/CreateOrderController'
+import { RemoveOrderController } from './controllers/order/RemoveOrderController'
 
 const router = Router()
 const upload = multer(uploadConfig.upload("./tmp"))
@@ -29,5 +30,6 @@ router.get('/category/product', isAuthenticated, new ListByCategoryController().
 
 // orders routes
 router.post('/order', isAuthenticated, new CreateOrderController().handle)
+router.delete('/order', isAuthenticated, new RemoveOrderController().handle)
 
 export { router }
